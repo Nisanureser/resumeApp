@@ -1,0 +1,65 @@
+.contact-fixed-right {
+  position: fixed;
+  top: 50%;
+  right: 40px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  z-index: 1000;
+}
+
+.contact-icon {
+  position: relative;
+  font-size: 29px;
+  color: #4a4e69;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.contact-icon:hover {
+  color: #0077b5;
+  transform: scale(1.2);
+}
+
+.contact-tooltip {
+  position: absolute;
+  right: 35px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 6px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+}
+
+.contact-icon:hover .contact-tooltip {
+  opacity: 1;
+}
+
+.map-icon:hover {
+  color: #b79538;
+}
+
+.email-icon:hover {
+  color: #263182;
+}
+
+.phone-icon:hover {
+  color: #2a9d8f;
+}
+
+.linkedin-icon:hover {
+  color: #0077b5;
+}
+
+.github-icon:hover {
+  color: #333;
+}

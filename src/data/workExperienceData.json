@@ -1,0 +1,21 @@
+[
+  {
+    "position": "INFORMATION TECHNOLOGIES DEPARTMENT - INTERN",
+    "date": "July 2023 - August 2023",
+    "company": "Istanbul Metropolitan Municipality",
+    "description": [
+      "Gained hands-on experience in PHP and JavaScript, enhancing both foundational and advanced skills.",
+      "Acquired practical knowledge in software development processes including technical documentation, debugging, and UI implementation."
+    ]
+  },
+  {
+    "position": "INFORMATION TECHNOLOGIES DEPARTMENT - INTERN",
+    "date": "July 2024 - August 2024",
+    "company": "Umur Printing Industry and Trade Joint Stock Company",
+    "description": [
+      "Actively contributed to a live company project using React, TypeScript and Sass, with a focus on component-based architecture and clean UI design.",
+      "Collaborated with the development team to build scalable, maintainable front-end modules aligned with design specifications.",
+      "Developed unit tests using the Jest testing framework to ensure code reliability and functionality."
+    ]
+  }
+]

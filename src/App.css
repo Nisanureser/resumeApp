@@ -1,0 +1,40 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /* scroll-behavior: smooth; */
+  /* font-family: "Segoe UI", sans-serif; */
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  /* overflow: hidden; */
+}
+
+.main-content {
+  flex-grow: 1;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  padding: 20px 40px;
+  /* min-height: 100vh; */
+}
+section {
+  min-height: 100vh;
+  scroll-margin-top: 20px;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  section {
+    transition: none;
+  }
+}

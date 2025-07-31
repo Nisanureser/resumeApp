@@ -1,0 +1,28 @@
+[
+  {
+    "groupTitle": "Frontend",
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "TypeScript",
+      "Sass",
+      "Tailwind CSS",
+      "Flutter",
+      "Figma"
+    ]
+  },
+  {
+    "groupTitle": "Backend & Database",
+    "skills": ["PHP", "MySQL", "C# / .NET"]
+  },
+  {
+    "groupTitle": "Version Control",
+    "skills": ["Git-Github"]
+  },
+  {
+    "groupTitle": "Other",
+    "skills": ["MICROSOFT OFFICE PROGRAMS", "English (Intermediate - B1)"]
+  }
+]
