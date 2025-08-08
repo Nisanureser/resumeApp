@@ -88,7 +88,9 @@
     margin-top: 8px;
   }
   .work-position {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 700;
+    word-break: normal;
+    white-space: normal;
   }
 }
