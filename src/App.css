@@ -1,3 +1,14 @@
+/* Reset ve global ayarlar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 html,
 body {
   height: 100%;
@@ -7,6 +18,7 @@ body {
   /* font-family: "Segoe UI", sans-serif; */
 }
 
+/* Uygulama yapısı */
 .app-container {
   display: flex;
   min-height: 100vh;
@@ -18,8 +30,9 @@ body {
   overflow-y: auto;
   scroll-behavior: smooth;
   padding: 20px 40px;
-  /* min-height: 100vh; */
 }
+
+/* Bölüm geçiş efektleri */
 section {
   min-height: 100vh;
   scroll-margin-top: 20px;
@@ -29,6 +42,7 @@ section.visible {
   opacity: 1;
   transform: translateY(0);
 }
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

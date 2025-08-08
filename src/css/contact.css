@@ -10,17 +10,37 @@
   z-index: 1000;
 }
 
+.contact-name {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 16px;
+  font-weight: 600;
+  color: #4a4e69;
+  letter-spacing: 2px;
+}
+
 .contact-icon {
   position: relative;
   font-size: 29px;
   color: #4a4e69;
   cursor: pointer;
-  transition: transform 0.2s;
+  transition: transform 0.2s, color 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact-icon:hover {
-  color: #0077b5;
   transform: scale(1.2);
+}
+
+.contact-icon a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: inherit;
+  text-decoration: none;
+  font-size: inherit;
 }
 
 .contact-tooltip {
@@ -44,22 +64,74 @@
   opacity: 1;
 }
 
+/* Hover renkleri */
 .map-icon:hover {
   color: #b79538;
 }
-
 .email-icon:hover {
   color: #263182;
 }
-
 .phone-icon:hover {
   color: #2a9d8f;
 }
-
 .linkedin-icon:hover {
   color: #0077b5;
 }
-
 .github-icon:hover {
   color: #333;
+}
+
+.contact-label {
+  display: none;
+  font-size: 12px;
+  margin-top: 4px;
+  color: #333;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-fixed-right {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transform: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: white;
+    padding: 10px 0 5px;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+
+  .contact-name {
+    display: none;
+  }
+
+  .contact-icon {
+    font-size: 22px;
+    min-width: 50px;
+  }
+
+  .contact-tooltip {
+    display: none;
+  }
+
+  .contact-label {
+    display: block;
+    font-size: 11px;
+    color: #555;
+    margin-top: 4px;
+    text-align: center;
+    max-width: 60px;
+    word-wrap: break-word;
+  }
+
+  .contact-icon a {
+    font-size: inherit;
+    color: inherit;
+    text-decoration: none;
+  }
 }

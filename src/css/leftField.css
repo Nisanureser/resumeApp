@@ -11,6 +11,8 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 800px;
   position: fixed;
+  left: 0;
+  top: 0;
 }
 
 .imageField {
@@ -19,6 +21,7 @@
   height: 185px;
   border-radius: 50%;
   margin-bottom: 40px;
+  cursor: pointer;
 }
 
 .imageField::before {
@@ -65,18 +68,121 @@
 }
 
 .leftField button.active {
-  /* background-color: #e5dede; */
   border-radius: 10px;
   border-bottom: 2px solid rgb(119, 111, 111);
   font-weight: bold;
   transform: scale(1.05);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   color: white;
-  font-weight: bold;
   font-size: 17px;
 }
 
-/*.leftField .active {
-  color: #ffffff;
-  font-weight: 500;
-}*/
+/* 📱 Mobil Görünüm */
+.mobile-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #302446;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  z-index: 1000;
+}
+
+.mobile-profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+  object-fit: cover;
+}
+
+.hamburger {
+  font-size: 24px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 60px;
+  right: 0;
+  left: 0;
+  background-color: #302446;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 999;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.mobile-menu button {
+  padding: 12px;
+  color: white;
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+.mobile-menu button:hover {
+  background-color: #44345f;
+}
+
+.mobile-menu button.active {
+  background-color: #524269;
+  font-weight: bold;
+}
+
+/* ✅ Profil resmine tıklanınca açılan modal */
+.image-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  cursor: pointer;
+}
+
+.image-modal-content {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: conic-gradient(from 0deg, #3f3651, #1e2259, #6d88a0, #8e6286);
+  padding: 5px;
+  animation: popIn 0.3s ease;
+}
+
+.image-modal-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #302446;
+}
+
+@keyframes popIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0.4;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
