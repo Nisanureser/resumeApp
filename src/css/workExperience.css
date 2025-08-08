@@ -71,8 +71,9 @@
 /* Responsive tasarım */
 @media (max-width: 768px) {
   .work-container {
-    margin: 40px 20px;
-    padding: 40px 30px;
+    margin: 30px 10px;
+    padding: 30px 10px;
+    width: auto;
   }
   .work-title {
     font-size: 36px;
@@ -88,9 +89,13 @@
     margin-top: 8px;
   }
   .work-position {
-    font-size: 15px;
+    font-size: 28px;
     font-weight: 700;
     word-break: normal;
     white-space: normal;
+  }
+  .work-company {
+    font-size: 19px;
+    margin: 5px 0;
   }
 }
