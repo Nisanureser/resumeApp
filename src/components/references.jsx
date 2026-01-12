@@ -1,11 +1,14 @@
 import "../css/references.css";
 import { FaPhoneAlt } from "react-icons/fa";
 import referencesData from "../data/referencesData.json";
+import { useTranslation } from "../hooks/useTranslation";
 
 function References() {
+  const { t } = useTranslation();
+
   return (
     <div className="references-container">
-      <h2 className="references-title">References</h2>
+      <h2 className="references-title">{t("references.title")}</h2>
 
       <div className="references-list">
         {referencesData.map((ref, index) => (

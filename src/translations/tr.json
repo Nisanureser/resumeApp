@@ -1,0 +1,82 @@
+{
+  "menu": {
+    "about": "Hakkımda",
+    "education": "Eğitim",
+    "workExperience": "İş Deneyimi",
+    "skills": "Yetenekler",
+    "references": "Referanslar"
+  },
+  "about": {
+    "name": "Nisanur Eser",
+    "title": "Bilgisayar Mühendisi",
+    "description": "Bilgisayar Mühendisliği mezunuyum ve web arayüz geliştirmeye olan ilgim beni frontend alanında uzmanlaşmaya yönlendirdi. React, TypeScript, JavaScript ve Sass gibi modern teknolojilerde güçlü bir teknik temel oluşturdum. Frontend mimarileri, bileşen tabanlı yapılar, responsive tasarım ve test süreçleri gibi alanlarda kendimi geliştirmeye sürekli çalışıyorum. Teknik bilgimi genişletmek için en son teknolojiler ve endüstri uygulamalarıyla güncel kalıyorum. Detaylara değer veren, öğrenmeye hevesli ve kullanıcı deneyimini ön planda tutan bir geliştirici olarak, kariyerimi frontend odaklı bir yol boyunca şekillendiriyorum."
+  },
+  "education": {
+    "title": "Eğitim",
+    "university": {
+      "school": "BÜLENT ECEVİT ÜNİVERSİTESİ",
+      "degree": "Bilgisayar Mühendisliği",
+      "extra": "GNO: 3.18/4.00",
+      "date": "Eylül 2021 - Haziran 2025"
+    },
+    "highSchool": {
+      "school": "ERA KOLEJİ",
+      "degree": "Lise",
+      "extra": "Okul 3.'sü olarak mezun oldu",
+      "date": "Eylül 2017 - Haziran 2021"
+    }
+  },
+  "workExperience": {
+    "title": "İş Deneyimleri",
+    "internship1": {
+      "position": "BİLİŞİM TEKNOLOJİLERİ BÖLÜMÜ - STAJYER",
+      "date": "Temmuz 2023 - Ağustos 2023",
+      "company": "İstanbul Büyükşehir Belediyesi",
+      "description": [
+        "PHP ve JavaScript'te pratik deneyim kazandım, hem temel hem de ileri düzey becerilerimi geliştirdim.",
+        "Teknik dokümantasyon, hata ayıklama ve UI uygulaması dahil olmak üzere yazılım geliştirme süreçlerinde pratik bilgi edindim."
+      ]
+    },
+    "internship2": {
+      "position": "BİLİŞİM TEKNOLOJİLERİ BÖLÜMÜ - STAJYER",
+      "date": "Temmuz 2024 - Ağustos 2024",
+      "company": "Umur Baskı Sanayi ve Ticaret Anonim Şirketi",
+      "description": [
+        "React, TypeScript ve Sass kullanarak canlı bir şirket projesine aktif olarak katkıda bulundum, bileşen tabanlı mimari ve temiz UI tasarımına odaklandım.",
+        "Geliştirme ekibiyle işbirliği yaparak tasarım spesifikasyonlarına uygun ölçeklenebilir, bakımı kolay frontend modülleri oluşturdum.",
+        "Kod güvenilirliği ve işlevselliğini sağlamak için Jest test framework'ünü kullanarak birim testleri geliştirdim."
+      ]
+    },
+    "job1": {
+      "position": "FRONTEND DEVELOPER",
+      "date": "Eylül 2025 -",
+      "company": "BirebirSoft Şirketi",
+      "description": [
+        "Google Maps API, Leaflet ve Next.js + TypeScript kullanarak gerçek zamanlı harita entegrasyonu ve rota optimizasyonu ile interaktif bir teslimat yönetim sistemi geliştirdim. Rol tabanlı erişim kontrolü ve temel güvenlik uygulamaları ile güvenli ve verimli sistem yönetimini sağlamak için ASP.NET Core tabanlı güvenli bir admin paneli oluşturdum"
+      ]
+    }
+  },
+  "skills": {
+    "title": "Yetenekler",
+    "groups": {
+      "frontend": "Frontend",
+      "backend": "Backend & Veritabanı",
+      "versionControl": "Versiyon Kontrolü",
+      "other": "Diğer"
+    },
+    "otherSkills": {
+      "english": "İngilizce (Orta - B1)"
+    }
+  },
+  "references": {
+    "title": "Referanslar"
+  },
+  "contact": {
+    "address": "Pendik/İstanbul",
+    "email": "nisa2415@hotmail.com",
+    "phone": "0554 151 17 58",
+    "addressLabel": "Adres",
+    "emailLabel": "E-posta",
+    "phoneLabel": "Telefon"
+  }
+}

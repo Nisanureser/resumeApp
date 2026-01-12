@@ -10,7 +10,9 @@
       "Sass",
       "Tailwind CSS",
       "Flutter",
-      "Figma"
+      "Figma",
+      "WordPress",
+      "Next.js"
     ]
   },
   {
@@ -19,10 +21,10 @@
   },
   {
     "groupTitle": "Version Control",
-    "skills": ["Git-Github"]
+    "skills": ["Git-Github " ]
   },
   {
     "groupTitle": "Other",
-    "skills": ["MICROSOFT OFFICE PROGRAMS", "English (Intermediate - B1)"]
+    "skills": ["Jira","Postman","Microsoft Office Programs", "English (Intermediate - B1)"]
   }
 ]

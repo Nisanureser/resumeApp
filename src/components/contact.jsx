@@ -6,28 +6,31 @@ import {
   FaGithub,
 } from "react-icons/fa";
 import "../css/contact.css";
+import { useTranslation } from "../hooks/useTranslation";
 
 function Contact() {
+  const { t } = useTranslation();
+
   return (
     <div className="contact-fixed-right">
       <div className="contact-name"></div>
 
-      <div className="contact-icon map-icon" title="Adres">
+      <div className="contact-icon map-icon" title={t("contact.addressLabel")}>
         <FaMapMarkerAlt />
-        <span className="contact-tooltip">Pendik/İstanbul</span>
-        <span className="contact-label">Pendik/İstanbul</span>
+        <span className="contact-tooltip">{t("contact.address")}</span>
+        <span className="contact-label">{t("contact.address")}</span>
       </div>
 
-      <div className="contact-icon email-icon" title="E-posta">
+      <div className="contact-icon email-icon" title={t("contact.emailLabel")}>
         <FaEnvelope />
-        <span className="contact-tooltip">nisa2415@hotmail.com</span>
-        <span className="contact-label">nisa2415@hotmail.com</span>
+        <span className="contact-tooltip">{t("contact.email")}</span>
+        <span className="contact-label">{t("contact.email")}</span>
       </div>
 
-      <div className="contact-icon phone-icon" title="Telefon">
+      <div className="contact-icon phone-icon" title={t("contact.phoneLabel")}>
         <FaPhone />
-        <span className="contact-tooltip">0554 151 17 58</span>
-        <span className="contact-label">0554 151 17 58</span>
+        <span className="contact-tooltip">{t("contact.phone")}</span>
+        <span className="contact-label">{t("contact.phone")}</span>
       </div>
 
       <div className="contact-icon linkedin-icon" title="LinkedIn">

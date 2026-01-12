@@ -17,5 +17,13 @@
       "Collaborated with the development team to build scalable, maintainable front-end modules aligned with design specifications.",
       "Developed unit tests using the Jest testing framework to ensure code reliability and functionality."
     ]
+  },
+  {
+    "position": "FRONTEND DEVELOPER ",
+    "date": "September 2025 -",
+    "company": "BirebirSoft Company",
+    "description": [
+      "Developed an interactive delivery management system with real-time map integration and route optimization using Google Maps API, Leaflet, and Next.js + TypeScript. Built a secure ASP.NET Core–based admin panel with role-based access control and essential security practices to ensure safe and efficient system management"
+    ]
   }
 ]

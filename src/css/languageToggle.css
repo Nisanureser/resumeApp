@@ -1,0 +1,112 @@
+.language-switch-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: linear-gradient(to right, #f8f4f9, #f2f0f7);
+  padding: 10px 16px;
+  border-radius: 30px;
+  box-shadow: 0 4px 15px rgba(74, 78, 105, 0.15);
+  font-family: "Montserrat", sans-serif;
+  border: 1px solid rgba(74, 78, 105, 0.1);
+}
+
+.language-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #9a8c98;
+  transition: all 0.3s ease;
+  min-width: 28px;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.language-label.active {
+  color: #4a4e69;
+  font-weight: 700;
+  transform: scale(1.1);
+}
+
+.language-switch {
+  position: relative;
+  width: 52px;
+  height: 28px;
+  background: linear-gradient(135deg, #6d597a 0%, #5e548e 100%);
+  border: none;
+  border-radius: 28px;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.3s ease;
+  outline: none;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.language-switch:hover {
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2), 0 0 8px rgba(109, 89, 122, 0.4);
+  transform: scale(1.05);
+}
+
+.language-switch:active {
+  transform: scale(0.98);
+}
+
+.language-switch.turkish {
+  background: linear-gradient(135deg, #6d597a 0%, #5e548e 100%);
+}
+
+.language-switch.english {
+  background: linear-gradient(135deg, #4a4e69 0%, #302446 100%);
+}
+
+.language-switch-slider {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f4f9 100%);
+  border-radius: 50%;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.language-switch.turkish .language-switch-slider {
+  transform: translateX(0);
+}
+
+.language-switch.english .language-switch-slider {
+  transform: translateX(24px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .language-switch-container {
+    top: 10px;
+    right: 10px;
+    padding: 8px 12px;
+    gap: 10px;
+  }
+
+  .language-label {
+    font-size: 12px;
+    min-width: 24px;
+  }
+
+  .language-switch {
+    width: 48px;
+    height: 26px;
+  }
+
+  .language-switch-slider {
+    width: 18px;
+    height: 18px;
+    top: 4px;
+  }
+
+  .language-switch.english .language-switch-slider {
+    transform: translateX(22px);
+  }
+}

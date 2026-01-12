@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react";
 import "../css/leftField.css";
-import userImage from "../assets/user.jpg";
+import userImage from "../assets/NisanurVesikalık-min.png";
 import { FaBars } from "react-icons/fa";
+import { useTranslation } from "../hooks/useTranslation";
 
 function LeftField({ onSelect, activeSection }) {
   const [isOpen, setIsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-  const [isImageModalOpen, setIsImageModalOpen] = useState(false); // ✅ modal state
+  const [isImageModalOpen, setIsImageModalOpen] = useState(false); //  modal state
 
   const handleResize = () => {
     setIsMobile(window.innerWidth <= 768);
@@ -41,7 +42,7 @@ function LeftField({ onSelect, activeSection }) {
             src={userImage}
             alt="profile"
             className="mobile-profile"
-            onClick={toggleImageModal} // ✅ tıklayınca modal açılır
+            onClick={toggleImageModal} //  tıklayınca modal açılır
           />
           <div className="hamburger" onClick={handleToggleMenu}>
             <FaBars />
@@ -85,12 +86,14 @@ function LeftField({ onSelect, activeSection }) {
 }
 
 function MenuButtons({ activeSection, handleSelect }) {
+  const { t } = useTranslation();
+
   const sections = [
-    { key: "about", label: "About" },
-    { key: "education", label: "Education" },
-    { key: "work-experience", label: "Work Experience" },
-    { key: "skills", label: "Skills" },
-    { key: "references", label: "References" },
+    { key: "about", label: t("menu.about") },
+    { key: "education", label: t("menu.education") },
+    { key: "work-experience", label: t("menu.workExperience") },
+    { key: "skills", label: t("menu.skills") },
+    { key: "references", label: t("menu.references") },
   ];
 
   return (

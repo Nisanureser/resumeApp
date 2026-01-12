@@ -6,6 +6,8 @@ import WorkExperience from "./components/workExperince";
 import Contact from "./components/contact";
 import Skills from "./components/skills";
 import References from "./components/references";
+import LanguageToggle from "./components/LanguageToggle";
+import { LanguageProvider } from "./contexts/LanguageContext";
 import { useState, useEffect } from "react";
 
 function App() {
@@ -62,27 +64,30 @@ function App() {
   };
 
   return (
-    <div className="app-container">
-      <LeftField activeSection={activeSection} onSelect={scrollToSection} />
-      <div className="main-content">
-        <section id="about">
-          <About />
-        </section>
-        <section id="education">
-          <Education />
-        </section>
-        <section id="work-experience">
-          <WorkExperience />
-        </section>
-        <section id="skills">
-          <Skills />
-        </section>
-        <section id="references">
-          <References />
-        </section>
+    <LanguageProvider>
+      <div className="app-container">
+        <LanguageToggle />
+        <LeftField activeSection={activeSection} onSelect={scrollToSection} />
+        <div className="main-content">
+          <section id="about">
+            <About />
+          </section>
+          <section id="education">
+            <Education />
+          </section>
+          <section id="work-experience">
+            <WorkExperience />
+          </section>
+          <section id="skills">
+            <Skills />
+          </section>
+          <section id="references">
+            <References />
+          </section>
+        </div>
+        <Contact />
       </div>
-      <Contact />
-    </div>
+    </LanguageProvider>
   );
 }
 

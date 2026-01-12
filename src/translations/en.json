@@ -1,0 +1,82 @@
+{
+  "menu": {
+    "about": "About",
+    "education": "Education",
+    "workExperience": "Work Experience",
+    "skills": "Skills",
+    "references": "References"
+  },
+  "about": {
+    "name": "Nisanur Eser",
+    "title": "Computer Engineering",
+    "description": "I am a Computer Engineering graduate, and my interest in web interface development has led me to specialize in the frontend field. I have built a strong technical foundation in modern technologies such as React, TypeScript, JavaScript, and Sass. I continuously work on improving myself in areas such as frontend architectures, component-based structures, responsive design, and testing processes. I stay up-to-date with the latest technologies and industry practices to expand my technical knowledge. As a developer who values detail, is eager to learn, and prioritizes user experience, I am shaping my career along a frontend-focused path."
+  },
+  "education": {
+    "title": "Education",
+    "university": {
+      "school": "BÜLENT ECEVIT UNIVERSITY",
+      "degree": "Computer Engineering",
+      "extra": "GPA: 3.18/4.00",
+      "date": "September 2021 - June 2025"
+    },
+    "highSchool": {
+      "school": "ERA COLLEGE",
+      "degree": "High School",
+      "extra": "Graduated 3rd in school",
+      "date": "September 2017 - June 2021"
+    }
+  },
+  "workExperience": {
+    "title": "Work Experiences",
+    "internship1": {
+      "position": "INFORMATION TECHNOLOGIES DEPARTMENT - INTERN",
+      "date": "July 2023 - August 2023",
+      "company": "Istanbul Metropolitan Municipality",
+      "description": [
+        "Gained hands-on experience in PHP and JavaScript, enhancing both foundational and advanced skills.",
+        "Acquired practical knowledge in software development processes including technical documentation, debugging, and UI implementation."
+      ]
+    },
+    "internship2": {
+      "position": "INFORMATION TECHNOLOGIES DEPARTMENT - INTERN",
+      "date": "July 2024 - August 2024",
+      "company": "Umur Printing Industry and Trade Joint Stock Company",
+      "description": [
+        "Actively contributed to a live company project using React, TypeScript and Sass, with a focus on component-based architecture and clean UI design.",
+        "Collaborated with the development team to build scalable, maintainable front-end modules aligned with design specifications.",
+        "Developed unit tests using the Jest testing framework to ensure code reliability and functionality."
+      ]
+    },
+    "job1": {
+      "position": "FRONTEND DEVELOPER",
+      "date": "September 2025 -",
+      "company": "BirebirSoft Company",
+      "description": [
+        "Developed an interactive delivery management system with real-time map integration and route optimization using Google Maps API, Leaflet, and Next.js + TypeScript. Built a secure ASP.NET Core–based admin panel with role-based access control and essential security practices to ensure safe and efficient system management"
+      ]
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "groups": {
+      "frontend": "Frontend",
+      "backend": "Backend & Database",
+      "versionControl": "Version Control",
+      "other": "Other"
+    },
+    "otherSkills": {
+      "english": "English (Intermediate - B1)"
+    }
+  },
+  "references": {
+    "title": "References"
+  },
+  "contact": {
+    "address": "Pendik/İstanbul",
+    "email": "nisa2415@hotmail.com",
+    "phone": "0554 151 17 58",
+    "addressLabel": "Address",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone"
+  }
+}
