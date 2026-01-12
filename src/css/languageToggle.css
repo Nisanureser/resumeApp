@@ -5,9 +5,9 @@
   z-index: 1000;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   background: linear-gradient(to right, #f8f4f9, #f2f0f7);
-  padding: 10px 16px;
+  padding: 8px 12px;
   border-radius: 30px;
   box-shadow: 0 4px 15px rgba(74, 78, 105, 0.15);
   font-family: "Montserrat", sans-serif;
@@ -15,11 +15,11 @@
 }
 
 .language-label {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   color: #9a8c98;
   transition: all 0.3s ease;
-  min-width: 28px;
+  min-width: 24px;
   text-align: center;
   letter-spacing: 0.5px;
 }
@@ -27,16 +27,16 @@
 .language-label.active {
   color: #4a4e69;
   font-weight: 700;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .language-switch {
   position: relative;
-  width: 52px;
-  height: 28px;
+  width: 44px;
+  height: 24px;
   background: linear-gradient(135deg, #6d597a 0%, #5e548e 100%);
   border: none;
-  border-radius: 28px;
+  border-radius: 24px;
   cursor: pointer;
   padding: 0;
   transition: all 0.3s ease;
@@ -63,10 +63,10 @@
 
 .language-switch-slider {
   position: absolute;
-  top: 4px;
-  left: 4px;
-  width: 20px;
-  height: 20px;
+  top: 3px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
   background: linear-gradient(135deg, #ffffff 0%, #f8f4f9 100%);
   border-radius: 50%;
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -78,7 +78,7 @@
 }
 
 .language-switch.english .language-switch-slider {
-  transform: translateX(24px);
+  transform: translateX(20px);
 }
 
 /* Responsive */

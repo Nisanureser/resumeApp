@@ -11,7 +11,7 @@
 }
 
 .work-title {
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 800;
   color: #4a4e69;
   margin-bottom: 10px;
@@ -71,31 +71,61 @@
 /* Responsive tasarım */
 @media (max-width: 768px) {
   .work-container {
-    margin: 30px 10px;
-    padding: 30px 10px;
+    margin: 20px 15px;
+    padding: 30px 20px;
     width: auto;
+    border-radius: 12px;
   }
+
   .work-title {
-    font-size: 36px;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    border-left: 4px solid #9a8c98;
+    padding-left: 12px;
+  }
+
+  .work-item {
+    margin-top: 28px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(154, 140, 152, 0.15);
+  }
+
+  .work-item:last-child {
+    border-bottom: none;
   }
 
   .work-header {
     flex-direction: column;
     align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+
+  .work-position {
+    font-size: 18px;
+    font-weight: 700;
+    word-break: normal;
+    white-space: normal;
+    line-height: 1.4;
+    margin-right: 0;
+    max-width: 100%;
   }
 
   .work-date {
     margin-left: 0;
-    margin-top: 8px;
+    margin-top: 4px;
+    font-size: 14px;
   }
-  .work-position {
-    font-size: 28px;
-    font-weight: 700;
-    word-break: normal;
-    white-space: normal;
-  }
+
   .work-company {
-    font-size: 19px;
-    margin: 5px 0;
+    font-size: 16px;
+    margin: 6px 0 10px 0;
+  }
+
+  .work-description {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-top: 8px;
   }
 }

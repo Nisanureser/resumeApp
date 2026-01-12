@@ -10,7 +10,7 @@
 }
 
 .skills-title {
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 800;
   color: #4a4e69;
   margin-bottom: 30px;
@@ -55,16 +55,37 @@
 
 @media (max-width: 768px) {
   .skills-container {
-    margin: 30px 10px;
-    padding: 30px 10px;
+    margin: 20px 15px;
+    padding: 30px 20px;
     width: auto;
-  }
-
-  .skills-list {
-    gap: 10px;
+    border-radius: 12px;
   }
 
   .skills-title {
-    font-size: 36px;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    border-left: 4px solid #9a8c98;
+    padding-left: 12px;
+  }
+
+  .skills-group {
+    margin-bottom: 24px;
+  }
+
+  .group-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .skills-list {
+    gap: 8px;
+  }
+
+  .skills-list li {
+    font-size: 14px;
+    padding: 6px 14px;
+    border-radius: 18px;
   }
 }

@@ -10,7 +10,7 @@
 }
 
 .about-title {
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 800;
   color: #4a4e69;
   margin-bottom: 10px;
@@ -34,8 +34,30 @@
 }
 @media (max-width: 768px) {
   .about-container {
-    margin: 30px 10px;
-    padding: 30px 10px;
+    margin: 80px 15px 20px 15px;
+    padding: 30px 20px;
     width: auto;
+    border-radius: 12px;
+  }
+
+  .about-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    border-left: 4px solid #9a8c98;
+    padding-left: 12px;
+  }
+
+  .about-subtitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  .about-description {
+    font-size: 15px;
+    line-height: 1.7;
+    padding: 8px 0;
+    letter-spacing: 0.1px;
   }
 }

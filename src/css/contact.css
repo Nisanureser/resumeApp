@@ -21,17 +21,17 @@
 
 .contact-icon {
   position: relative;
-  font-size: 29px;
+  font-size: 20px;
   color: #4a4e69;
   cursor: pointer;
-  transition: transform 0.2s, color 0.2s;
+  transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .contact-icon:hover {
-  transform: scale(1.2);
+  transform: scale(1.15);
 }
 
 .contact-icon a {
@@ -45,19 +45,20 @@
 
 .contact-tooltip {
   position: absolute;
-  right: 35px;
+  right: 30px;
   top: 50%;
   transform: translateY(-50%);
   background-color: #f5f5f5;
   color: #333;
-  padding: 6px 10px;
+  padding: 5px 8px;
   border-radius: 6px;
   white-space: nowrap;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.2s ease-in-out;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  font-size: 14px;
+  font-size: 12px;
+  font-weight: 500;
 }
 
 .contact-icon:hover .contact-tooltip {
@@ -111,7 +112,7 @@
   }
 
   .contact-icon {
-    font-size: 22px;
+    font-size: 20px;
     min-width: 50px;
   }
 
@@ -121,12 +122,14 @@
 
   .contact-label {
     display: block;
-    font-size: 11px;
+    font-size: 10px;
     color: #555;
-    margin-top: 4px;
+    margin-top: 3px;
     text-align: center;
     max-width: 60px;
     word-wrap: break-word;
+    line-height: 1.3;
+    font-weight: 500;
   }
 
   .contact-icon a {

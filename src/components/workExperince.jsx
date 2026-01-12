@@ -11,10 +11,10 @@ function WorkExperience() {
 
   const workExperienceData = [
     {
-      position: t("workExperience.internship1.position"),
-      date: t("workExperience.internship1.date"),
-      company: t("workExperience.internship1.company"),
-      description: getDescription("workExperience.internship1.description")
+      position: t("workExperience.job1.position"),
+      date: t("workExperience.job1.date"),
+      company: t("workExperience.job1.company"),
+      description: getDescription("workExperience.job1.description")
     },
     {
       position: t("workExperience.internship2.position"),
@@ -23,10 +23,10 @@ function WorkExperience() {
       description: getDescription("workExperience.internship2.description")
     },
     {
-      position: t("workExperience.job1.position"),
-      date: t("workExperience.job1.date"),
-      company: t("workExperience.job1.company"),
-      description: getDescription("workExperience.job1.description")
+      position: t("workExperience.internship1.position"),
+      date: t("workExperience.internship1.date"),
+      company: t("workExperience.internship1.company"),
+      description: getDescription("workExperience.internship1.description")
     }
   ];
 

@@ -10,7 +10,7 @@
 }
 
 .references-title {
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 800;
   color: #4a4e69;
   margin-bottom: 30px;
@@ -74,43 +74,47 @@
 }
 
 @media (max-width: 768px) {
+  .references-container {
+    margin: 20px 15px;
+    padding: 30px 20px;
+    width: auto;
+    border-radius: 12px;
+  }
+
+  .references-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    border-left: 4px solid #9a8c98;
+    padding-left: 12px;
+  }
+
   .references-list {
     grid-template-columns: 1fr;
-  }
-  .references-container {
-    margin: 120px auto;
-    padding: 30px 20px;
-  }
-
-  .references-title {
-    font-size: 36px;
-  }
-}
-
-/* Küçük ekranlar (telefon) */
-@media (max-width: 768px) {
-  .references-container {
-    /* margin: 120px 10px;
-    padding: 25px 15px; */
-    margin: 30px 10px;
-    padding: 30px 10px;
-    width: auto;
-  }
-
-  .references-title {
-    font-size: 36px;
+    gap: 16px;
   }
 
   .reference-card {
-    padding: 16px 15px;
+    padding: 18px;
+    border-radius: 10px;
   }
 
   .name {
     font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 6px;
   }
 
-  .position,
-  .company,
+  .position {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+
+  .company {
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+
   .phone {
     font-size: 14px;
   }

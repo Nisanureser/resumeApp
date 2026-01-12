@@ -32,6 +32,12 @@ body {
   padding: 20px 40px;
 }
 
+@media (max-width: 768px) {
+  .main-content {
+    padding: 0;
+  }
+}
+
 /* Bölüm geçiş efektleri */
 section {
   min-height: 100vh;
