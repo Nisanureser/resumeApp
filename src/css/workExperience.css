@@ -71,7 +71,7 @@
 /* Responsive tasarım */
 @media (max-width: 768px) {
   .work-container {
-    margin: 20px 15px;
+    margin: 20px 15px 0 15px;
     padding: 30px 20px;
     width: auto;
     border-radius: 12px;

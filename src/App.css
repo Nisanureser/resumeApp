@@ -49,6 +49,19 @@ section.visible {
   transform: translateY(0);
 }
 
+@media (max-width: 768px) {
+  section {
+    min-height: auto;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  
+  section:last-child {
+    padding-bottom: 90px; /* Footer için yer bırak */
+    margin-bottom: 0;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
