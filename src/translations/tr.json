@@ -78,5 +78,16 @@
     "addressLabel": "Adres",
     "emailLabel": "E-posta",
     "phoneLabel": "Telefon"
+  },
+  "chatbot": {
+    "title": "AI Asistanı",
+    "toggle": "Chatbot'u aç/kapat",
+    "close": "Chatbot'u kapat",
+    "welcome": "Merhaba! Ben AI asistanınızım. Aday hakkında soruları cevaplayabilir ve iş ilanlarına ne kadar uygun olduğunu değerlendirebilirim.",
+    "hint": "Adayın geçmişi, yetenekleri hakkında sorular sorabilir veya bir iş ilanı yapıştırarak ne kadar uygun olduğunu görebilirsiniz!",
+    "placeholder": "Mesajınızı yazın...",
+    "send": "Mesaj gönder",
+    "thinking": "Düşünüyorum...",
+    "error": "Hata"
   }
 }

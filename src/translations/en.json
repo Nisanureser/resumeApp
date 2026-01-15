@@ -78,5 +78,16 @@
     "addressLabel": "Address",
     "emailLabel": "Email",
     "phoneLabel": "Phone"
+  },
+  "chatbot": {
+    "title": "AI Assistant",
+    "toggle": "Toggle chatbot",
+    "close": "Close chatbot",
+    "welcome": "Hello! I'm your AI assistant. I can answer questions about the candidate and evaluate how well they match job requirements.",
+    "hint": "Ask me anything about the candidate's background, skills, or paste a job posting to see how well they match!",
+    "placeholder": "Type your message...",
+    "send": "Send message",
+    "thinking": "Thinking...",
+    "error": "Error"
   }
 }

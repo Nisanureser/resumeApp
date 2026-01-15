@@ -83,13 +83,26 @@
   justify-content: space-between;
   align-items: center;
   background-color: #302446;
-  padding: 10px 20px;
+  padding: 10px 15px;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   height: 60px;
   z-index: 1000;
+  transition: z-index 0.3s ease;
+  gap: 10px;
+}
+
+.app-container.chat-open .mobile-navbar {
+  z-index: 999;
+}
+
+.mobile-navbar-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .mobile-profile {

@@ -7,6 +7,7 @@
   border-radius: 16px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   box-sizing: border-box;
+  transition: all 0.3s ease;
 }
 
 .references-title {
@@ -16,6 +17,7 @@
   margin-bottom: 30px;
   border-left: 6px solid #9a8c98;
   padding-left: 15px;
+  transition: color 0.3s ease;
 }
 
 .references-list {

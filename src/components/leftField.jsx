@@ -3,6 +3,7 @@ import "../css/leftField.css";
 import userImage from "../assets/NisanurVesikalık-min.png";
 import { FaBars } from "react-icons/fa";
 import { useTranslation } from "../hooks/useTranslation";
+import LanguageToggle from "./LanguageToggle";
 
 function LeftField({ onSelect, activeSection }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,6 +45,9 @@ function LeftField({ onSelect, activeSection }) {
             className="mobile-profile"
             onClick={toggleImageModal} //  tıklayınca modal açılır
           />
+          <div className="mobile-navbar-center">
+            <LanguageToggle />
+          </div>
           <div className="hamburger" onClick={handleToggleMenu}>
             <FaBars />
           </div>

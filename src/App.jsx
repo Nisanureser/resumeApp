@@ -7,11 +7,14 @@ import Contact from "./components/contact";
 import Skills from "./components/skills";
 import References from "./components/references";
 import LanguageToggle from "./components/LanguageToggle";
+import Chatbot from "./components/Chatbot";
 import { LanguageProvider } from "./contexts/LanguageContext";
 import { useState, useEffect } from "react";
+import { FaComments } from "react-icons/fa";
 
 function App() {
   const [activeSection, setActiveSection] = useState("about");
+  const [isChatOpen, setIsChatOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -65,8 +68,21 @@ function App() {
 
   return (
     <LanguageProvider>
-      <div className="app-container">
-        <LanguageToggle />
+      <div className={`app-container ${isChatOpen ? "chat-open" : ""}`}>
+        <div className="top-controls">
+          <div className="desktop-language-toggle">
+            <LanguageToggle />
+          </div>
+          {!isChatOpen && (
+            <button
+              className="chatbot-toggle-button"
+              onClick={() => setIsChatOpen(true)}
+              aria-label="Open chatbot"
+            >
+              <FaComments />
+            </button>
+          )}
+        </div>
         <LeftField activeSection={activeSection} onSelect={scrollToSection} />
         <div className="main-content">
           <section id="about">
@@ -85,6 +101,7 @@ function App() {
             <References />
           </section>
         </div>
+        <Chatbot isOpen={isChatOpen} onToggle={setIsChatOpen} />
         <Contact />
       </div>
     </LanguageProvider>

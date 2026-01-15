@@ -22,19 +22,36 @@ body {
 .app-container {
   display: flex;
   min-height: 100vh;
-  /* overflow: hidden; */
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-content {
-  flex-grow: 1;
+  flex: 1;
   overflow-y: auto;
   scroll-behavior: smooth;
   padding: 20px 40px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  min-width: 0; /* Prevents flex item from overflowing */
+}
+
+.app-container.chat-open .main-content {
+  margin-right: 400px;
+}
+
+@media (max-width: 768px) {
+  .app-container.chat-open .main-content {
+    margin-right: 0;
+  }
+  
+  .chatbot-panel {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
   .main-content {
-    padding: 0;
+    padding: 80px 15px 20px 15px;
   }
 }
 

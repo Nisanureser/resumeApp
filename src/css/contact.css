@@ -8,6 +8,11 @@
   align-items: center;
   gap: 20px;
   z-index: 1000;
+  transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.app-container.chat-open .contact-fixed-right {
+  right: 440px;
 }
 
 .contact-name {
@@ -92,6 +97,10 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+  .app-container.chat-open .contact-fixed-right {
+    right: 0;
+  }
+
   .contact-fixed-right {
     position: fixed;
     top: auto;

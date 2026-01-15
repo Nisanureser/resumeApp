@@ -1,12 +1,13 @@
 .about-container {
   max-width: 1100px;
-  margin: 85px auto 90px 260px;
+  margin: 55px auto 100px 260px;
   padding: 60px 80px;
   font-family: "Poppins", sans-serif;
   background: linear-gradient(to right, #f8f4f9, #f2f0f7);
   border-radius: 16px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
+  box-sizing: border-box;
 }
 
 .about-title {
@@ -20,21 +21,24 @@
 }
 
 .about-subtitle {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 600;
   color: #6d597a;
   margin-bottom: 30px;
-  position: relative;
+  margin-top: 8px;
+  padding-left: 21px;
 }
 
 .about-description {
-  font-size: 19px;
-  color: #5e548e;
-  padding: 13px 5px;
+  font-size: 18px;
+  color: #4a4e69;
+  line-height: 1.7;
+  padding: 0 5px;
+  margin-top: 10px;
 }
 @media (max-width: 768px) {
   .about-container {
-    margin: 80px 15px 15px 15px;
+    margin: 20px 15px 0 15px;
     padding: 30px 20px;
     width: auto;
     border-radius: 12px;
@@ -52,12 +56,15 @@
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 20px;
+    padding-left: 16px;
+    margin-top: 6px;
   }
 
   .about-description {
     font-size: 15px;
     line-height: 1.7;
-    padding: 8px 0;
+    padding: 0;
+    margin-top: 8px;
     letter-spacing: 0.1px;
   }
 }
