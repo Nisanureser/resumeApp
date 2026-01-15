@@ -6,7 +6,7 @@ import { getResumeDataAsText } from "../utils/resumeData";
 import { getAdditionalInfo } from "../data/additionalInfo";
 import { validateMessage, sanitizeInput, RateLimiter } from "../utils/inputValidation";
 import "../css/chatbot.css";
-import { FaComments, FaTimes, FaPaperPlane, FaSpinner } from "react-icons/fa";
+import { FaTimes, FaPaperPlane, FaSpinner } from "react-icons/fa";
 
 interface Message {
   role: "user" | "assistant";
