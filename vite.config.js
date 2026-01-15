@@ -7,14 +7,8 @@ export default defineConfig({
   build: {
     // Security: Don't expose source maps in production
     sourcemap: false,
-    // Minify for production
-    minify: 'terser',
-    terserOptions: {
-      compress: {
-        drop_console: true, // Remove console logs in production
-        drop_debugger: true,
-      },
-    },
+    // Minify for production (esbuild is faster and doesn't need terser)
+    minify: 'esbuild',
     rollupOptions: {
       output: {
         // Obfuscate chunk names for additional security
